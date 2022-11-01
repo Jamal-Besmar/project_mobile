@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 
   }
 }
-double getProportionScreenHeight( double inputHeight){
+double getProportionScreenHeight(double inputHeight){
   double screenHeight =SizeConfig.screenHeight;
   return (inputHeight / 812.0) * screenHeight;
 }
