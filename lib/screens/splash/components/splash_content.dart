@@ -7,7 +7,7 @@ class SplashContent extends StatelessWidget {
    SplashContent(
     this.text,
     this.image,
-    )
+    );
 
 
   @override
