@@ -4,8 +4,9 @@ import 'package:untitled1/size_config.dart';
 
 class SplashContent extends StatelessWidget {
 
-  const SplashContent({super.key,required this.text,required this.image}) ;
+  const SplashContent({super.key , required this.text, required this.image,required })  ;
   final String text ,image ;
+
 
 
   @override

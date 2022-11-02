@@ -10,4 +10,6 @@ const KPrimaryGradienColor = LinearGradient(
 );
 const KSecondaryColor=Color(0xFF84FFFF);
 const KTextColor= Color(0xFF263238);
+// Duration For Animation in APP
 const KAnimationDuration=Duration(milliseconds: 200);
+
