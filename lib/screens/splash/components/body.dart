@@ -12,7 +12,7 @@ class Body extends StatefulWidget{
 }
 class _BodyState extends State{
 int currentPage = 0;
-List<Map<String,String>> splashData=[
+List< Map <String,String >> splashData=[
   {
     "text" : "Welcome to Standard ,Let's APP",
     "image":"assest/images/s-1.jpg"
@@ -40,9 +40,9 @@ List<Map<String,String>> splashData=[
                 });
               } ,
             itemCount: splashData.length,
-            itemBuilder: (context,index)=> SplashContent(
-                text: "text",
-                image: "image",
+            itemBuilder: (context, index)=> SplashContent(
+                text: splashData[index]["text"],
+                image: splashData[index]["image"]",
             ),
             ),
             ),
