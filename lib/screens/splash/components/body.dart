@@ -18,11 +18,11 @@ List< Map <String,String >> splashData=[
     "image":"assest/images/s-1.jpg"
 },
   {
-  "text" : "Welcome to Standard ,Let's APP",
+  "text" : "Welcome to Standard ,Let's APP 2",
   "image":"assest/images/s-2.jpg"
 },
   {
-  "text" : "Welcome to Standard ,Let's APP",
+  "text" : "Welcome to Standard ,Let's APP 3",
   "image":"assest/images/s-3.jpg"
 }];
 @override
@@ -40,9 +40,9 @@ List< Map <String,String >> splashData=[
                 });
               } ,
             itemCount: splashData.length,
-            itemBuilder: (context, index)=> SplashContent(
-                text: splashData[index]["text"],
-                image: splashData[index]["image"]",
+            itemBuilder: ( context, index )=> SplashContent(
+                text: splashData[index]["text"].toString(),
+                image: splashData[index]["image"].toString(),
             ),
             ),
             ),
