@@ -15,15 +15,15 @@ int currentPage = 0;
 List< Map <String,String >> splashData=[
   {
     "text" : "Welcome to Standard ,Let's APP",
-    "image":"assest/images/s_1.jpg"
+    "image":"assets/images/s_1.png"
 },
   {
   "text" : "Welcome to Standard ,Let's APP 2",
-  "image":"assest/images/s_2.jpg"
+  "image":"assets/images/s_2.png"
 },
   {
   "text" : "Welcome to Standard ,Let's APP 3",
-  "image":"assest/images/s_3.jpg"
+  "image":"assets/images/s_3.png"
 }];
 @override
   Widget build(BuildContext context) {
