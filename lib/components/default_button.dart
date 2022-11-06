@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled1/constants.dart';
 import 'package:untitled1/size_config.dart';
 
 class DefaultButton extends StatelessWidget{
@@ -12,20 +13,25 @@ class DefaultButton extends StatelessWidget{
     return SizedBox(
       width: double.infinity,
       height: getProportionScreenHeight(56),
-      child:TextButton(onPressed: press (),
+      child:TextButton(
+      onPressed: press(),
 
-        child: Text(
-          text,
-          style: TextStyle(
-            fontSize: getProportionScreenWidth(18),
-            color: Colors.white,
-          ),
+        style:
+        TextButton.styleFrom(
+          backgroundColor: KPrimaryColor,
+            shape: const BeveledRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(50)))
+
         ),
 
+        child:  Text("Get Start",style: TextStyle(color: KPrimaryLightColor,
+            fontFamily: 'Muli',
+            fontSize:20,
+        ),
+        ),
+        ) ,
+      );
 
 
-      ),
-    );
   }
 
 }
