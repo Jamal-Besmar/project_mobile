@@ -13,6 +13,7 @@ class DefaultButton extends StatelessWidget{
       width: double.infinity,
       height: getProportionScreenHeight(56),
       child:TextButton(onPressed: press (),
+
         child: Text(
           text,
           style: TextStyle(

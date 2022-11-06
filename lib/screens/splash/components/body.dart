@@ -43,6 +43,7 @@ List< Map <String,String >> splashData=[
             itemBuilder: ( context, index )=> SplashContent(
                 text: splashData[index]["text"].toString(),
                 image: splashData[index]["image"].toString(),
+
             ),
             ),
             ),
