@@ -21,11 +21,12 @@ class DefaultButton extends StatelessWidget{
             shape:StadiumBorder(),
         ),
         child:
-        Text("Get Start",
+        Text(text,
           style: TextStyle(
             color: KPrimaryLightColor,
             fontFamily: 'Muli',
             fontSize:20,
+              fontWeight: FontWeight.w900,
         ),
         ),
         ) ,

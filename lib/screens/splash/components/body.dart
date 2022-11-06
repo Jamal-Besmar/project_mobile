@@ -62,7 +62,7 @@ List< Map <String,String >> splashData=[
                   ),
                   Spacer(flex: 3),
                   DefaultButton(
-                    text: "Go",
+                    text: "GET START",
                     press: (){
 
                     },
