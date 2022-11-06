@@ -14,8 +14,7 @@ class DefaultButton extends StatelessWidget{
       width: double.infinity,
       height: getProportionScreenHeight(56),
       child:TextButton(
-      onPressed: press(),
-
+      onPressed:press(),
         style:
         TextButton.styleFrom(
           backgroundColor: KPrimaryColor,
