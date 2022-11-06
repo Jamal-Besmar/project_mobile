@@ -19,11 +19,12 @@ class DefaultButton extends StatelessWidget{
         style:
         TextButton.styleFrom(
           backgroundColor: KPrimaryColor,
-            shape: const BeveledRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(50)))
-
+            shape:StadiumBorder(),
         ),
-
-        child:  Text("Get Start",style: TextStyle(color: KPrimaryLightColor,
+        child:
+        Text("Get Start",
+          style: TextStyle(
+            color: KPrimaryLightColor,
             fontFamily: 'Muli',
             fontSize:20,
         ),
