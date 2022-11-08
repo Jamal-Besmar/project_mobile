@@ -8,46 +8,53 @@ class Body extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
-    return Container(
-      decoration: BoxDecoration(
-        image: DecorationImage(
-        image: AssetImage('assets/images/login.png'), fit: BoxFit.cover),
-       ),
-      margin: EdgeInsets.zero,
 
-      child:
+    return
       SafeArea(
+
 
         child: SizedBox(
 
           width: double.infinity,
+
           child: Padding(
+
             padding: EdgeInsets.symmetric(horizontal: getProportionScreenHeight(20)),
             child: Column(
+
               children: [
-                SizedBox( height: SizeConfig.screenHeight * 0.04),
-                Text("Welcome Back ",
-                  style:TextStyle(
-                    color: KPrimaryLightColor,
-                    fontSize: getProportionScreenWidth(28),
-                    fontWeight: FontWeight.bold,
-                  ) ,
+                SizedBox(
+
+                    height: SizeConfig.screenHeight * 0.001),
+                  Image.asset("assets/images/login.png",width: 200,),
+                  Text("Welcome Back ",
+                      style:TextStyle(
+                        color: Colors.black,
+                        fontSize: getProportionScreenWidth(20),
+                        fontWeight: FontWeight.bold,
+                      ) ,
+
+
                 ),
+
+
+
                 Text("Sing in with your phone number and password",
                   style: TextStyle(
-                    color: KPrimaryLightColor,
+                    color: Colors.black,
                   ),
                   textAlign: TextAlign.center
                 ),
-                SizedBox(height: SizeConfig.screenHeight * 0.28),
+                SizedBox(height: SizeConfig.screenHeight * 0.07),
                 SignForm(),
 
               ],
             ),
           ),
         ),
-      ),
+
     );
+
   }
 
 }
