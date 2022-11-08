@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:untitled1/components/default_button.dart';
 import 'package:untitled1/constants.dart';
+import 'package:untitled1/screens/login/sign_in_screen.dart';
 import 'package:untitled1/screens/splash/components/splash_content.dart';
 
 import '../../../size_config.dart';
@@ -61,12 +62,12 @@ List< Map <String,String >> splashData=[
                             (index) =>  buildDot (index:index)),
                   ),
                   Spacer(flex: 3),
-                  DefaultButton(
+                  /*DefaultButton(
                     text: "GET START",
                     press: (){
-
+                      //Navigator.pushNamed(context, SignInScreen.routename);
                     },
-                  ),
+                  ),*/
               Spacer(),
                 ],
               ),
