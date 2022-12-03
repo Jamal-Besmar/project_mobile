@@ -5,5 +5,5 @@ import 'package:untitled1/screens/splash/splash_screen.dart';
 
 final Map<String ,WidgetBuilder> routes = {
   SplashScreen.routeName : (context) => SplashScreen(),
-  SplashScreen.routeName : (context) => SignInScreen(),
+  SignInScreen.routename : (context) => SignInScreen(),
 };

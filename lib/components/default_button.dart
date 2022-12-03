@@ -6,7 +6,7 @@ class DefaultButton extends StatelessWidget{
 
   const DefaultButton({super.key ,required this.text,required this.press});
   final String text;
-  final Function press ;
+  final void Function() press ;
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -14,7 +14,7 @@ class DefaultButton extends StatelessWidget{
       width: double.infinity,
       height: getProportionScreenHeight(56),
       child:TextButton(
-      onPressed:press(),
+      onPressed:press,
         style:
         TextButton.styleFrom(
           backgroundColor: KPrimaryColor,

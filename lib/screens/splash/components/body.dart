@@ -62,12 +62,12 @@ List< Map <String,String >> splashData=[
                             (index) =>  buildDot (index:index)),
                   ),
                   Spacer(flex: 3),
-                  /*DefaultButton(
+                  DefaultButton(
                     text: "GET START",
                     press: (){
-                      //Navigator.pushNamed(context, SignInScreen.routename);
-                    },
-                  ),*/
+                      Navigator.pushNamed(context, SignInScreen.routename);
+                      },
+                  ),
               Spacer(),
                 ],
               ),
