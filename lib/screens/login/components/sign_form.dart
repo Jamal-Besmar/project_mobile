@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:untitled1/components/default_button.dart';
 import 'package:untitled1/constants.dart';
+import 'package:untitled1/screens/main/main_screen.dart';
 import 'package:untitled1/size_config.dart';
 
 class SignForm extends StatefulWidget {
@@ -43,7 +44,11 @@ class _SignFormState extends State<SignForm>
             ],
           ),
           SizedBox(height: getProportionScreenHeight(20)),
-          DefaultButton(text: "Log in", press:  (){},)
+          DefaultButton(text: "Log in",
+            press:() {
+              Navigator.pushNamed(context, MainScreen.routename);
+            }
+          )
         ],
         //,
       ),
