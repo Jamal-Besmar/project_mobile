@@ -8,7 +8,9 @@ class SideMenu extends StatelessWidget {
   }) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context)
+
+  {
     return Drawer(
       width: getProportionScreenWidth(175),
       child: ListView(
@@ -24,7 +26,7 @@ class SideMenu extends StatelessWidget {
           ),
           DrawerListTile(
             icon: TernavIcons.lightOutline.video,
-            title: "Video",
+            title:'Video',
             onTap: () {},
           ),
           DrawerListTile(
@@ -33,7 +35,7 @@ class SideMenu extends StatelessWidget {
             onTap: () {},
           ),
           DrawerListTile(
-            icon: TernavIcons.lightOutline.folder,
+            icon: TernavIcons.lightOutline.bookmark,
             title: "Virtual Exams",
             onTap: () {},
           ),
@@ -68,7 +70,7 @@ class DrawerListTile extends StatelessWidget {
   }) : super(key: key);
   final IconData icon;
   final String title;
-  final VoidCallback onTap;
+  final Function() onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -77,12 +79,12 @@ class DrawerListTile extends StatelessWidget {
       horizontalTitleGap: 0,
       leading: Icon(
         icon,
-        color: Colors.grey,
+        color: Colors.black,
         size: 25,
       ),
       title: Text(
         title,
-        style: const TextStyle(color: Colors.grey),
+        style:  TextStyle(color: Colors.black,fontWeight: FontWeight.bold),
       ),
     );
   }
