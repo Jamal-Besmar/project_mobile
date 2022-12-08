@@ -15,7 +15,7 @@ class SideMenu extends StatelessWidget {
         shrinkWrap: true,
         children: [
           SizedBox(
-            height: 100,
+            height: 150,
             child: DrawerHeader(
                 child: Image.asset(
                   "assets/images/logo.png",
