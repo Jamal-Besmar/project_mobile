@@ -14,7 +14,7 @@ class CustomeBar extends StatelessWidget implements PreferredSizeWidget {
       elevation: 0,
       backgroundColor: backgroundColor,
       title: Text(title),
-      iconTheme: const IconThemeData(color: Colors.grey, size: 28),
+      iconTheme: const IconThemeData(color: Colors.black, size: 28),
       actions: [
         IconButton(
           onPressed: () {},

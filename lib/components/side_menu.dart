@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ternav_icons/ternav_icons.dart';
+import 'package:untitled1/screens/Audio/audio_screen.dart';
+import 'package:untitled1/screens/video/video_screen.dart';
 import 'package:untitled1/size_config.dart';
 
 class SideMenu extends StatelessWidget {
@@ -27,12 +29,12 @@ class SideMenu extends StatelessWidget {
           DrawerListTile(
             icon: TernavIcons.lightOutline.video,
             title:'Video',
-            onTap: () {},
+            onTap: () {Navigator.pushNamed(context, VideoScreen.routename); }
           ),
           DrawerListTile(
             icon: TernavIcons.lightOutline.hedphon,
             title: "Audio",
-            onTap: () {},
+            onTap: () {Navigator.pushNamed(context, AudioScreen.routename);},
           ),
           DrawerListTile(
             icon: TernavIcons.lightOutline.bookmark,
