@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:percent_indicator/percent_indicator.dart';
 import '../model/data.dart';
 
 
@@ -9,15 +8,17 @@ class CourseGrid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
+
         itemCount: year.length,
         physics: const NeverScrollableScrollPhysics(),
         shrinkWrap: true,
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             childAspectRatio: 16 / 7, crossAxisCount: 1, mainAxisSpacing: 20),
-        itemBuilder: (context, index) {
+          itemBuilder: (context, index) {
           return Container(
             decoration: BoxDecoration(
               image: DecorationImage(
+
                   image: AssetImage(year[index].backImage), fit: BoxFit.contain),
             ),
             child: Padding(

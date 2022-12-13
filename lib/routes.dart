@@ -3,6 +3,7 @@ import 'package:untitled1/screens/Audio/audio_screen.dart';
 import 'package:untitled1/screens/login/sign_in_screen.dart';
 import 'package:untitled1/screens/main/main_screen.dart';
 import 'package:untitled1/screens/splash/splash_screen.dart';
+import 'package:untitled1/screens/subject/subject_screen.dart';
 import 'package:untitled1/screens/video/video_screen.dart';
 
 final Map<String ,WidgetBuilder> routes = {
@@ -11,5 +12,6 @@ final Map<String ,WidgetBuilder> routes = {
   MainScreen.routename:(context) =>MainScreen(),
   VideoScreen.routename:(context)=>VideoScreen(),
   AudioScreen.routename:(context)=>AudioScreen(),
+  SubjectScreen.routename:(context)=>SubjectScreen(),
 
 };
