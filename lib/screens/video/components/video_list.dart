@@ -15,7 +15,7 @@ class VideoContecnt extends StatelessWidget{
             padding: EdgeInsets.all(10),
             child: ListTile(
               onTap: (){},
-              leading: Image.asset("assets/images/music_icon.png"),
+              leading: Image.asset("assets/images/video_icon.png"),
               title: Text(video[index].videoName),
               subtitle: Text(video[index].videoDes),
               trailing:Icon( Icons.cloud_download, ),
