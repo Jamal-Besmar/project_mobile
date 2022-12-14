@@ -12,6 +12,7 @@ class SubjectContecnt extends StatelessWidget{
           child: Padding(
             padding: EdgeInsets.all(10),
             child: ListTile(
+              onTap: (){},
               leading: Image.asset(subject[index].imageUrl),
               title: Text(subject[index].subject),
 

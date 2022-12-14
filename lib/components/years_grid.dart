@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../model/data.dart';
+import '../screens/subject/subject_screen.dart';
 
 
 class CourseGrid extends StatelessWidget {
@@ -15,13 +16,15 @@ class CourseGrid extends StatelessWidget {
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             childAspectRatio: 16 / 7, crossAxisCount: 1, mainAxisSpacing: 20),
           itemBuilder: (context, index) {
-          return Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
+          return InkWell(
+              onTap: (){Navigator.pushNamed(context, SubjectScreen.routename);},
+              child: Container(
+                  decoration: BoxDecoration(
+                  image: DecorationImage(
 
                   image: AssetImage(year[index].backImage), fit: BoxFit.contain),
             ),
-            child: Padding(
+              child: Padding(
               padding: const EdgeInsets.all(35),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -56,7 +59,8 @@ class CourseGrid extends StatelessWidget {
                 ],
               ),
             ),
-          );
+          )
+          ) ;
         });
   }
 }
