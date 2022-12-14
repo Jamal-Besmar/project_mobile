@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:untitled1/screens/Audio/audio_list_screen.dart';
+import 'package:untitled1/screens/video/video_list_screen.dart';
 import '../../../model/subject_data.dart';
 
 class SubjectContecnt extends StatelessWidget{
@@ -12,7 +14,7 @@ class SubjectContecnt extends StatelessWidget{
           child: Padding(
             padding: EdgeInsets.all(10),
             child: ListTile(
-              onTap: (){},
+              onTap: (){Navigator.pushNamed(context, VideoListScreen.routename);},
               leading: Image.asset(subject[index].imageUrl),
               title: Text(subject[index].subject),
 
