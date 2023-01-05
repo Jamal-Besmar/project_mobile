@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:ternav_icons/ternav_icons.dart';
 import 'package:untitled1/screens/Audio/audio_main_screen.dart';
+import 'package:untitled1/screens/sign_up/sign_up_screen.dart';
 import 'package:untitled1/screens/subject/subject_screen.dart';
 import 'package:untitled1/screens/video/video_main_screen.dart';
 import 'package:untitled1/size_config.dart';
+
+import '../screens/exam/questions_list.dart';
 
 class SideMenu extends StatelessWidget {
   const SideMenu({
@@ -40,7 +43,7 @@ class SideMenu extends StatelessWidget {
           DrawerListTile(
             icon: TernavIcons.lightOutline.bookmark,
             title: "Virtual Exams",
-            onTap: () {Navigator.pushNamed(context, SubjectScreen.routename);},
+            onTap: () {Navigator.pushNamed(context, QestionsListScreen.routename);},
           ),
           DrawerListTile(
             icon: TernavIcons.lightOutline.dollar,
@@ -50,7 +53,7 @@ class SideMenu extends StatelessWidget {
           DrawerListTile(
             icon: TernavIcons.lightOutline.settings,
             title: "Settings",
-            onTap: () {},
+            onTap: () {Navigator.pushNamed(context, SignUpScreen.routename);},
           ),
           DrawerListTile(
             icon: TernavIcons.lightOutline.logout,

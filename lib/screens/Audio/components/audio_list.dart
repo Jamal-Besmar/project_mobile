@@ -10,6 +10,7 @@ class AudioContecnt extends StatelessWidget{
       itemCount: audio.length,
       itemBuilder: (context,index){
         return Card(
+          elevation: 0,
           child: Padding(
             padding: EdgeInsets.all(10),
             child: ListTile(

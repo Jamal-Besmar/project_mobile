@@ -11,6 +11,7 @@ class VideoContecnt extends StatelessWidget{
       itemCount: video.length,
       itemBuilder: (context,index){
         return Card(
+          elevation: 0,
           child: Padding(
             padding: EdgeInsets.all(10),
             child: ListTile(
