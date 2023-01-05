@@ -72,6 +72,8 @@ TextFormField buildPasswordFormFiled(){
     decoration: InputDecoration(
         labelText: "Password",
         hintText: "Enter Your Password",
+      floatingLabelBehavior: FloatingLabelBehavior.always,
+      suffixIcon:Icon(Icons.password,color: Colors.grey,)
 
 
     ),
